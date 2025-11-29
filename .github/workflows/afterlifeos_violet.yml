@@ -17,10 +17,11 @@ jobs:
         sudo apt update
         sudo apt install -y openjdk-11-jdk bc bison build-essential curl flex git gnupg gperf \
           libncurses5-dev libssl-dev libxml2 libxml2-utils lzop pngcrush repo rsync \
-          schedtool squashfs-tools xsltproc zip unzip zlib1g-dev ccache git-lfs
+          schedtool squashfs-tools xsltproc zip unzip zlib1g-dev ccache git-lfs neofetch
 
     - name: Set Git config and add repo tool
       run: |
+        neofetch
         git config --global user.name "Chronix-AOSP"
         git config --global user.email "phoniexpaul88@gmail.com"
         mkdir -p ~/bin
